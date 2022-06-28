@@ -17,7 +17,7 @@ const UserSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Post'
   }],
-  friends: [{
+  pal: [{
     type: Schema.Types.ObjectId,
     ref: 'User'
   }]
@@ -25,6 +25,10 @@ const UserSchema = new Schema({
 {
   toJSON: { virtuals: true, getters: true },
   id: false
+});
+
+UserSchema.virtual('palCount').get(function () {
+  return this.pal.length;
 });
 
 const User = model('User', UserSchema);

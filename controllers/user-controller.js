@@ -12,7 +12,7 @@ const userController = {
 
   getUserById({ params }, res) {
     User.findOne({ _id: params.userId })
-      .populate('friends')
+      .populate('pals')
       .populate('posts')
       .then(dbUserData => res.json(dbUserData))
       .catch(err => {
