@@ -1,0 +1,25 @@
+{
+  "name": "post-pals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kierstenv/post-pals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kierstenv/post-pals/issues"
+  },
+  "homepage": "https://github.com/kierstenv/post-pals#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "luxon": "^2.4.0",
+    "mongoose": "^6.4.1"
+  }
+}
