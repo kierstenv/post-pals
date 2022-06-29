@@ -17,7 +17,7 @@ const UserSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Post'
   }],
-  pal: [{
+  pals: [{
     type: Schema.Types.ObjectId,
     ref: 'User'
   }]
