@@ -6,7 +6,7 @@
   
   ***
 
-  ![API preview](./public/images/NOSQL%20demo.gif)
+  ![API preview](public/images/NOSQL%20demo.gif)
 
   ## Demo
 
