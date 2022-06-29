@@ -1,10 +1,8 @@
-const res = require("express/lib/response");
-const { Post, User, PopIn } = require("../models");
+const { Post, User } = require("../models");
 
 const postController = {
   getAllPosts(req, res) {
     Post.find({})
-    .select("-__v")
     .then(dbPostData => res.json(dbPostData))
     .catch(err => res.status(400).json(err));
   },

@@ -27,9 +27,9 @@ const UserSchema = new Schema({
   id: false
 });
 
-UserSchema.virtual('palCount').get(function () {
-  return this.pal.length;
-});
+// UserSchema.virtual('palCount').get(function () {
+
+// });
 
 const User = model('User', UserSchema);
 
